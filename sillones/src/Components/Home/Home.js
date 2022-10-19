@@ -24,8 +24,8 @@ export const Home = () => {
           <h3>VENTA DE SILLONES DE DISEÑO</h3>
           <hr />
           <p>
-            Dejanos tus datos y un representante se comunicará con vos para
-            darte el mejor asesoramiento.
+            Dejanos tus datos y un representante se comunicará con usted para
+            darle el mejor asesoramiento.
           </p>
         </div>
         <div className="home-text-image">

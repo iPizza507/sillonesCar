@@ -19,8 +19,8 @@ export const Contact = () => {
           <h3>SILLONES CARMEN - CONTÁCANOS</h3>
           <hr />
           <p>
-            Dejanos tus datos y un representante se comunicará con vos para
-            darte el mejor asesoramiento.
+            Dejanos tus datos y un representante se comunicará con usted para
+            darle el mejor asesoramiento.
           </p>
         </div>
       </div>
