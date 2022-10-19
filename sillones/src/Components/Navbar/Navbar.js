@@ -23,7 +23,7 @@ export const Navbar = () => {
               <Link to="">Quienes Somos</Link>
             </li>
             <li>
-              <Link to="/shop">Tienda</Link>
+              <Link to="/shop">Productos</Link>
             </li>
             <li>
               <Link to="/contact">Contacto</Link>
