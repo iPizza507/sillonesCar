@@ -4,37 +4,48 @@ import "./styles.css";
 
 //
 import { Link } from "react-router-dom";
+import {
+  AiOutlineInstagram,
+  AiOutlineFacebook,
+  AiOutlineWhatsApp,
+} from "react-icons/ai";
 
 export const Navbar = () => {
   return (
     <>
-      <nav>
+      <nav className="navbar">
         <div>
           <Link to="/">IMAGEN</Link>
         </div>
-        <div className="navbar-list">
+        <div className="">
           <ul>
             <li>
-              <Link to="">Agencia de diseño</Link>
+              <Link to="">Quienes Somos</Link>
             </li>
             <li>
-              <Link to="/services">Portafolio</Link>
+              <Link to="/services">Tienda</Link>
             </li>
             <li>
-              <Link to="">Blog</Link>
+              <Link to="">Contacto</Link>
             </li>
           </ul>
         </div>
         <div>
           <ul>
             <li>
-              <Link to="">Agencia de diseño</Link>
+              <Link to="">
+                <AiOutlineInstagram />
+              </Link>
             </li>
             <li>
-              <Link to="/services">Portafolio</Link>
+              <Link to="">
+                <AiOutlineFacebook />
+              </Link>
             </li>
             <li>
-              <Link to="">Blog</Link>
+              <Link to="">
+                <AiOutlineWhatsApp />
+              </Link>
             </li>
           </ul>
         </div>

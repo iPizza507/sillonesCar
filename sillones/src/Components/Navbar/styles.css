@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.navbar div{
+    display: flex;
+    align-items: center;
+}
+.navbar div ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+.navbar div ul li{
+    margin: 0.5rem;
+}
+.navbar div ul li a{
+    text-decoration: none;
+    margin: 0.5rem;
+    color: black;
+}
