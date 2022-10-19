@@ -10,7 +10,10 @@
                 position: relative;
             }
             .text-img{
-                width: 100%;
+                background-color: white;
+                opacity: 0.7;
+                width: 48%;
+                padding: 2rem;
                 position: absolute;
                 top: 45%;
                 left: 50%;
@@ -21,7 +24,7 @@
                     margin: 0;
                     width: 100%;
                     }
-                    h2{ 
+                    h2{
                     font-size: 2rem;
                     margin: 0;
                     width: 100%;
@@ -31,6 +34,7 @@
     }
     .contact-footer{
         text-align: center;
+        margin: 1rem 0;
         h4,h3, p{
             margin: 0.7rem;
         }

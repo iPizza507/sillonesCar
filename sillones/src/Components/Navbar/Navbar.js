@@ -13,7 +13,7 @@ import {
 export const Navbar = () => {
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar" id="Navbar">
         <div>
           <Link to="/">IMAGEN</Link>
         </div>

@@ -10,7 +10,7 @@ export const Contact = () => {
         <div className="contact-header">
           <img src={sillonFondo} alt="" className="sillonFondo"></img>
           <div className="text-img">
-            <h1>Somos la empresa de los sillones</h1>
+            <h1>SOMOS LA EMPRESA DE LOS SILLONES</h1>
             <h2>¡Colchones a tu medida! Y mucho más..</h2>
           </div>
         </div>

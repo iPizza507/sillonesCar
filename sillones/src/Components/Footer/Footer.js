@@ -2,6 +2,15 @@
 import "./styles.scss";
 //components
 import { Link } from "react-router-dom";
+import {
+  AiOutlineInstagram,
+  AiOutlineFacebook,
+  AiOutlineWhatsApp,
+  AiOutlineArrowUp,
+  AiOutlineMail,
+  AiOutlineEnvironment,
+  AiOutlineClockCircle,
+} from "react-icons/ai";
 
 //
 
@@ -21,21 +30,47 @@ export const Footer = () => {
             <Link to="">Contacto</Link>
           </p>
           <hr />
-          <p>Aviso legal</p>
-          <p>ICONOSS</p>
+          <p>
+            <Link to="">Avsio Legal</Link>
+          </p>
+          <p className="icons">
+            <a href="http://google.com">
+              <AiOutlineInstagram />
+            </a>
+
+            <a href="http://google.com">
+              <AiOutlineFacebook />
+            </a>
+
+            <a href="http://google.com">
+              <AiOutlineWhatsApp />
+            </a>
+          </p>
         </div>
         <div>
           <h2>Buenos Aires</h2>
-          <p>Dirección:</p>
-          <p>Lunes a viernes:</p>
-          <p>mail</p>
-          <p>wpp</p>
+          <p className="icons-text">
+            <AiOutlineEnvironment />
+            Dirección: María Asunta 3351, Villa Lynch
+          </p>
+          <p className="icons-text">
+            <AiOutlineClockCircle />
+            Lunes a viernes: 8.30 - 17 hs.
+          </p>
+          <p className="icons-text">
+            <AiOutlineMail /> email@email.com
+          </p>
+          <p className="icons-text">
+            <AiOutlineWhatsApp /> +56 9 1145424185
+          </p>
         </div>
       </div>
 
       <div className="footer-footer">
         <Link to="">Copyright © 2022 | Aviso legal</Link>
-        Alguna img
+        <a href="#Navbar">
+          Scroll <AiOutlineArrowUp />
+        </a>
       </div>
     </div>
   );
