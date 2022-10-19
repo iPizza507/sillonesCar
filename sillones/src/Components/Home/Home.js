@@ -3,7 +3,11 @@ import "./styles.scss";
 //components
 import sillonFondo from "../../img/sillonFondo.jpg";
 import sillonHome from "../../img/sillonHome.jpg";
-import Maps from "../Maps/Maps";
+import sillonHome1 from "../../img/sillonFondo1.jpg";
+import sillonHome2 from "../../img/sillonFondo2.jpg";
+import sillonHome3 from "../../img/sillonHome3.jpg";
+import sillonHome4 from "../../img/sillonHome4.jpg";
+import sillonHome6 from "../../img/sillonHome6.jpg";
 export const Home = () => {
   return (
     <>
@@ -25,22 +29,22 @@ export const Home = () => {
           </p>
         </div>
         <div className="home-text-image">
-          <div>
+          <div className="home-text2">
             <h1>Una tradición que se cumple desde hace mucho..</h1>
             <h2>A LA TALLA DE TU HOGAR</h2>
             <button type="button">Ver productos</button>
           </div>
 
           <div>
-            <img src={sillonHome} alt="" id="image1"></img>
+            <img src={sillonHome6} alt="" id="image1"></img>
           </div>
         </div>
         <div className="home-images">
-          <img src={sillonHome} alt="" id="image1"></img>
+          <img src={sillonHome2} alt="" id="image1"></img>
           <img src={sillonHome} alt="" id="image2"></img>
-          <img src={sillonHome} alt="" id="image3"></img>
-          <img src={sillonHome} alt="" id="image4"></img>
-          <img src={sillonHome} alt="" id="image5"></img>
+          <img src={sillonHome4} alt="" id="image3"></img>
+          <img src={sillonHome3} alt="" id="image4"></img>
+          <img src={sillonHome1} alt="" id="image5"></img>
         </div>
       </div>
     </>
