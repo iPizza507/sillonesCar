@@ -23,3 +23,8 @@
     margin: 0.5rem;
     color: black;
 }
+.navbar div ul li a:hover{
+    text-decoration: underline;
+}
+
+

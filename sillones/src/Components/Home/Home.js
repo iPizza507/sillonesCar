@@ -9,6 +9,23 @@ import sillonHome3 from "../../img/sillonHome3.jpg";
 import sillonHome4 from "../../img/sillonHome4.jpg";
 import sillonHome6 from "../../img/sillonHome6.jpg";
 export const Home = () => {
+  const elementos = document.getElementsByTagName("img");
+
+  window.addEventListener("scroll", () => {
+    //console.log(elementos[1].getBoundingClientRect().top);
+    for (const item in elementos) {
+      if (elementos[item].getBoundingClientRect().top < 100) {
+        console.log("es menor a 100");
+        //elementos[item].classList.add("mystyle");
+      } else {
+        console.log(elementos[item].getBoundingClientRect().top);
+      }
+    }
+    //un array con las imagenes
+    //preguntar si esta cerca de cada una de ellas
+    //si esta cerca de una de ellas, darle la animaciona a esa cosa
+  });
+
   return (
     <>
       <div className="home">
