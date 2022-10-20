@@ -1,21 +1,34 @@
 *{
     margin: 0;
 }
-.animation-slidein{
-  animation: slidein;
-  animation-duration: 3s;
-}
+
 .opacity{
   opacity: 0;
 }
-@keyframes slidein {
+@keyframes slideinLEFT{
     from {
       margin-left: 100%;
-      opacity: 0;
     }
   
     to {
       margin-left: 0%;
-      opacity: 1;
     }
-  }
+}
+@keyframes slideinRIGTH {
+    from {
+      margin-right: 100px;
+    }
+  
+    to {
+      margin-right: 0px;
+    }
+}
+@keyframes opaci {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 100%;
+    }
+}

@@ -9,7 +9,7 @@ import sillonHome3 from "../../img/sillonHome3.jpg";
 import sillonHome4 from "../../img/sillonHome4.jpg";
 import sillonHome6 from "../../img/sillonHome6.jpg";
 export const Home = () => {
-  const elementos = document.getElementsByTagName("img");
+  const elementos = document.getElementsByClassName("img");
   console.log(elementos);
   const pantalla = window.innerHeight / 3.5;
 
@@ -20,7 +20,7 @@ export const Home = () => {
     for (const item in elementos) {
       if (elementos[item].getBoundingClientRect().top < pantalla) {
         elementos[item].classList.remove("opacity");
-        elementos[item].style.animation = "slidein 1s";
+        elementos[item].style.animation = `opaci 2s`;
         console.log(elementos[item].classList);
       }
     }
@@ -52,15 +52,45 @@ export const Home = () => {
           </div>
 
           <div>
-            <img src={sillonHome6} alt="" id="image1" className="opacity"></img>
+            <img
+              src={sillonHome6}
+              alt=""
+              id="image1"
+              className="opacity img"
+            ></img>
           </div>
         </div>
         <div className="home-images">
-          <img src={sillonHome2} alt="" id="image1" className="opacity"></img>
-          <img src={sillonHome} alt="" id="image2" className="opacity"></img>
-          <img src={sillonHome4} alt="" id="image3" className="opacity"></img>
-          <img src={sillonHome3} alt="" id="image4" className="opacity"></img>
-          <img src={sillonHome1} alt="" id="image5" className="opacity"></img>
+          <img
+            src={sillonHome2}
+            alt=""
+            id="image1"
+            className="opacity img"
+          ></img>
+          <img
+            src={sillonHome}
+            alt=""
+            id="image2"
+            className="opacity img"
+          ></img>
+          <img
+            src={sillonHome4}
+            alt=""
+            id="image3"
+            className="opacity img"
+          ></img>
+          <img
+            src={sillonHome3}
+            alt=""
+            id="image4"
+            className="opacity img"
+          ></img>
+          <img
+            src={sillonHome1}
+            alt=""
+            id="image5"
+            className="opacity img"
+          ></img>
         </div>
       </div>
     </>
