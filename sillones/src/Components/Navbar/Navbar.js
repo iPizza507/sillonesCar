@@ -23,7 +23,7 @@ export const Navbar = () => {
               <Link to="">Quienes Somos</Link>
             </li>
             <li>
-              <Link to="/shop">Productos</Link>
+              <Link to="/product">Productos</Link>
             </li>
             <li>
               <Link to="/contact">Contacto</Link>
@@ -33,19 +33,19 @@ export const Navbar = () => {
         <div>
           <ul>
             <li>
-              <Link to="">
+              <a href="https://www.instagram.com/">
                 <AiOutlineInstagram />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="">
+              <a href="https://www.facebook.com/">
                 <AiOutlineFacebook />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="">
+              <a href="https://web.whatsapp.com/">
                 <AiOutlineWhatsApp />
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

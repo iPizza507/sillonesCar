@@ -1,5 +1,7 @@
 //styles
 import "./styles.scss";
+//dependecies
+import { Link } from "react-router-dom";
 //components
 import sillonFondo from "../../img/sillonFondo.jpg";
 import sillonHome from "../../img/sillonHome.jpg";
@@ -10,7 +12,6 @@ import sillonHome4 from "../../img/sillonHome4.jpg";
 import sillonHome6 from "../../img/sillonHome6.jpg";
 export const Home = () => {
   const elementos = document.getElementsByClassName("img");
-  console.log(elementos);
   const pantalla = window.innerHeight / 3.5;
 
   window.addEventListener("scroll", () => {
@@ -48,7 +49,7 @@ export const Home = () => {
           <div className="home-text2">
             <h1>Una tradición que se cumple desde hace mucho..</h1>
             <h2>A LA TALLA DE TU HOGAR</h2>
-            <button type="button">Ver productos</button>
+            <Link to="/product">Ver productos</Link>
           </div>
 
           <div>

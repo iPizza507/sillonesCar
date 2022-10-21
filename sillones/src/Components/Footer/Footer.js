@@ -21,28 +21,28 @@ export const Footer = () => {
         <div>
           <h2>La Empresa</h2>
           <p>
-            <Link to="">Quienes Somos</Link>
+            <Link to="/">Quienes Somos</Link>
           </p>
           <p>
-            <Link to="">Tienda</Link>
+            <Link to="/product">Productos</Link>
           </p>
           <p>
-            <Link to="">Contacto</Link>
+            <Link to="contact">Contacto</Link>
           </p>
           <hr />
           <p>
             <Link to="">Avsio Legal</Link>
           </p>
           <p className="icons">
-            <a href="http://google.com">
+            <a href="https://www.instagram.com/">
               <AiOutlineInstagram />
             </a>
 
-            <a href="http://google.com">
+            <a href="https://www.facebook.com/">
               <AiOutlineFacebook />
             </a>
 
-            <a href="http://google.com">
+            <a href="https://web.whatsapp.com/">
               <AiOutlineWhatsApp />
             </a>
           </p>
@@ -58,7 +58,8 @@ export const Footer = () => {
             Lunes a viernes: 8.30 - 17 hs.
           </p>
           <p className="icons-text">
-            <AiOutlineMail /> email@email.com
+            <AiOutlineMail />
+            email@email.com
           </p>
           <p className="icons-text">
             <AiOutlineWhatsApp /> +56 9 1145424185

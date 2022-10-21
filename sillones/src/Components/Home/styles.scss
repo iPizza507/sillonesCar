@@ -19,17 +19,20 @@
             left: 50%;
             transform: translate(-50%, -45%);
             text-align: center;
-            animation-duration: 3s;
-            animation-name: slideinLEFT;
+            
             h1{
                 font-size: 3rem;
                 margin: 0;
                 width: 100%;
+                animation-duration: 3s;
+                animation-name: slideinLEFT;
             }
             h2{
                 font-size: 2rem;
                 margin: 0;
                 width: 100%;
+                animation-duration: 3s;
+                animation-name: slideinLEFT;
             }
         }  
     }
@@ -67,11 +70,19 @@
                 font-size: 1rem;
                 margin: 0.7rem;
             }
-            button{
+            a{
                 font-size: 1rem;
+                text-decoration: none;
                 background-color: rgb(250, 233, 215);
                 border-radius: 5px;
-
+                border: solid 1px black;
+                margin: 0.5rem;
+                padding: 0.3rem;
+                color: black;
+                transition: all 400ms;
+            }
+            a:hover{
+                background-color: rgb(255, 226, 196);
             }
         }
     }
@@ -86,6 +97,7 @@
             width: 100%;
             height: 100%;
             background-size: cover;
+            background-repeat: no-repeat;
         }
         #image1{
             grid-area: image1;

@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 95%;
-    margin: 1rem;
+    width: 100%;
+    margin: 1rem 0;
 }
 .navbar div{
     display: flex;

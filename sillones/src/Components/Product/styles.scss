@@ -18,18 +18,20 @@
             top: 45%;
             left: 50%;
             transform: translate(-50%, -45%);
-            text-align: center; 
-            animation-duration: 3s;
-            animation-name: slideinLEFT;
+            text-align: center;
             h1{
                 font-size: 3rem;
                 margin: 0;
                 width: 100%;
+                animation-duration: 3s;
+                animation-name: slideinLEFT;
             }
             h2{
                 font-size: 2rem;
                 margin: 0;
                 width: 100%;
+                animation-duration: 3s;
+                animation-name: slideinLEFT;
             }
         }  
     }
@@ -54,7 +56,8 @@
             width: 300px;
             border-radius: 5px 5px 0 0;
             box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
-
+            cursor: pointer;
+            transition: all 400ms;
             .card-top{
                 img{
                     width: 100%;
@@ -74,5 +77,9 @@
             }
             
         }
+        .card:hover{
+            transform: scale(1.1);
+        }
     }
+    
 }
