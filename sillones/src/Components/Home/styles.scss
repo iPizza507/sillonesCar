@@ -8,6 +8,7 @@
         .sillonFondo{
             width: 100%; 
             position: relative;
+            object-fit: cover;
         }
         .text-img{
             background-color: white;
@@ -107,16 +108,30 @@
         }
         #image3{
             grid-area: image3;
-
         }
         #image4{
             grid-area: image4;
-
         }
         #image5{
             grid-area: image5;
-
         }
     }
 }
  
+@media all and (min-width:1024px){ 
+    .home{
+       .home-header{
+            .sillonFondo{
+                height: 700px;
+            }
+        }
+        .home-text-image{
+            padding: 2rem 10%;
+           
+        }
+        .home-images{
+            margin: 2rem 15%;
+        }
+    }
+
+}
