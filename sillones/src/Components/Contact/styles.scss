@@ -5,9 +5,11 @@
    .contact-header{
         width: 100%;
         height: auto;
+        figure{
+            position: relative;
             .sillonFondo{
                 width: 100%; 
-                position: relative;
+                object-fit: cover;
             }
             .text-img{
                 background-color: white;
@@ -15,26 +17,27 @@
                 width: 100%;
                 padding: 2rem 0;
                 position: absolute;
-                top: 45%;
+                top: 40%;
                 left: 50%;
                 transform: translate(-50%, -45%);
                 text-align: center;
-                    h1{
+                
+                h1{
                     font-size: 3rem;
                     margin: 0;
                     width: 100%;
                     animation-duration: 3s;
                     animation-name: slideinLEFT;
-                    }
-                    h2{
+                }
+                h2{
                     font-size: 2rem;
                     margin: 0;
                     width: 100%;
                     animation-duration: 3s;
                     animation-name: slideinLEFT;
-                    }
-            }
-            
+                }
+            }  
+        }
     }
     .contact-footer{
         text-align: center;
@@ -51,25 +54,10 @@
     }
 }
 
+@media all and (min-width:768px) and (max-width: 1200px){ 
+}
 
-@media all and (min-width:678px){ 
-    .contact{
-       .contact-header{
-            .sillonFondo{
-                height: 70px;
-            }
-        }
-    }
+@media all and (max-width: 767px){
 
 }
-@media all and (min-width:1024px){ 
-    .contact{
-       .contact-header{
-            .sillonFondo{
-                height: 700px;
-            }
-        }
-    }
 
-}
- 

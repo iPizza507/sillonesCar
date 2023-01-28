@@ -3,13 +3,13 @@ import "./styles.scss";
 //dependecies
 import { Link } from "react-router-dom";
 //components
-import sillonFondo from "../../img/sillonFondo.jpg";
-import sillonHome from "../../img/sillonHome.jpg";
-import sillonHome1 from "../../img/sillonFondo1.jpg";
-import sillonHome2 from "../../img/sillonFondo2.jpg";
-import sillonHome3 from "../../img/sillonHome3.jpg";
-import sillonHome4 from "../../img/sillonHome4.jpg";
-import sillonHome6 from "../../img/sillonHome6.jpg";
+import sillonFondo from "../../img/RLFLIA_Sillon.jpeg";
+import sillonHome from "../../img/RLFLIA_Sillon10.jpeg";
+import sillonHome1 from "../../img/RLFLIA_Sillon11.jpeg";
+import sillonHome2 from "../../img/RLFLIA_Sillon12.jpeg";
+import sillonHome3 from "../../img/RLFLIA_Sillon13.jpeg";
+import sillonHome4 from "../../img/RLFLIA_Sillon14.jpeg";
+import sillonHome6 from "../../img/RLFLIA_Sillon15.jpeg";
 export const Home = () => {
   const elementos = document.getElementsByClassName("img");
   const pantalla = window.innerHeight / 3.5;
@@ -30,11 +30,13 @@ export const Home = () => {
     <>
       <div className="home">
         <div className="home-header">
-          <img src={sillonFondo} alt="" className="sillonFondo"></img>
-          <div className="text-img">
-            <h1>SILLONES DE DISEÑO</h1>
-            <h2>¡Colchones a tu medida! Y mucho más..</h2>
-          </div>
+          <figure>
+            <img src={sillonFondo} alt="" className="sillonFondo"></img>
+            <figcaption className="text-img">
+              <h1>SILLONES DE DISEÑO</h1>
+              <h2>¡Colchones a tu medida! Y mucho más..</h2>
+            </figcaption>
+          </figure>
         </div>
         <div className="home-text">
           <h4>Quiénes Somos</h4>

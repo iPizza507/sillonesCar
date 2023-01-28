@@ -1,18 +1,20 @@
 //styles
 import "./styles.scss";
 //components
-import sillonHome6 from "../../img/sillonHome6.jpg";
+import sillonFondo from "../../img/RLFLIA_Sillon4.jpeg";
 import Products from "./Products";
 export const Product = () => {
   return (
     <>
       <div className="product">
         <div className="product-header">
-          <img src={sillonHome6} alt="" className="sillonFondo"></img>
-          <div className="text-img">
-            <h1>ALGUNOS DE NUESTROS PRODUCTOS</h1>
-            <h2>¡Colchones a tu medida! Y mucho más..</h2>
-          </div>
+          <figure>
+            <img src={sillonFondo} alt="" className="sillonFondo"></img>
+            <figcaption className="text-img">
+              <h1>SILLONES DE DISEÑO</h1>
+              <h2>¡Colchones a tu medida! Y mucho más..</h2>
+            </figcaption>
+          </figure>
         </div>
         <div className="product-text">
           <h4>Productos</h4>
