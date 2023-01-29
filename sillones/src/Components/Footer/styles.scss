@@ -40,7 +40,9 @@
         align-items: center;
         background-color: black;
         color: white;
-        a{
+        button, a{
+            cursor: pointer;
+            background-color: black;
             margin: 1rem;
             text-decoration: none;
             color: white;

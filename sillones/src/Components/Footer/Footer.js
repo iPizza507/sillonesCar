@@ -15,6 +15,11 @@ import {
 //
 
 export const Footer = () => {
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
   return (
     <div className="footer">
       <div className="footer-header">
@@ -69,9 +74,9 @@ export const Footer = () => {
 
       <div className="footer-footer">
         <Link to="">Copyright © 2022 | Aviso legal</Link>
-        <a href="#Navbar">
+        <button onClick={() => topFunction()}>
           Scroll <AiOutlineArrowUp />
-        </a>
+        </button>
       </div>
     </div>
   );
