@@ -1,7 +1,7 @@
 //styles
 import "./styles.scss";
 //components
-import sillonFondo from "../../img/RLFLIA_Sillon4.jpeg";
+import sillonFondo from "../../img/RLFLIA_Sillon10.jpeg";
 import Products from "./Products";
 export const Product = () => {
   return (

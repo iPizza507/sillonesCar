@@ -19,6 +19,7 @@ export const Navbar = () => {
   window.addEventListener("load", () => {
     setView(window.innerWidth);
   });
+
   window.addEventListener("resize", () => {
     setView(window.innerWidth);
   });
@@ -29,10 +30,12 @@ export const Navbar = () => {
 
   function SlideMenu() {
     if (MenuHambur.style.display === "none") {
+      console.log("mostrar");
       MenuHambur.style.display = "block";
-      HideButton.style.display = "none";
       ShowButton.style.display = "block";
+      HideButton.style.display = "none";
     } else {
+      console.log("cerrar");
       MenuHambur.style.display = "none";
       HideButton.style.display = "block";
       ShowButton.style.display = "none";
@@ -91,17 +94,18 @@ export const Navbar = () => {
         <div className="navbar-button-hambur">
           <button
             className="button-hambur"
-            id="HideButton"
-            onClick={() => SlideMenu()}
-          >
-            <AiOutlineMenu />
-          </button>
-          <button
-            className="button-hambur"
             id="ShowButton"
             onClick={() => SlideMenu()}
           >
             <AiOutlineMenuFold />
+          </button>
+
+          <button
+            className="button-hambur"
+            id="HideButton"
+            onClick={() => SlideMenu()}
+          >
+            <AiOutlineMenu />
           </button>
 
           <nav className="navbar" id="MenuHambur">
@@ -145,7 +149,6 @@ export const Navbar = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      aca
                       <AiOutlineWhatsApp />
                     </a>
                   </li>

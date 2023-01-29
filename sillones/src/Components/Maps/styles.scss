@@ -12,5 +12,27 @@
         p{
             margin: 1rem;
         }
+        iframe{
+            width: 90%;
+        }
     }
 }   
+
+@media all and (max-width: 767px){
+    .Maps{
+        flex-direction: column;
+        text-align: center;
+        div{
+            margin: 1rem;
+            h2{
+                margin: 1rem;
+            }
+            p{
+                margin: 1rem;
+            }
+            iframe{
+                width: 90%;
+            }
+        }
+    }   
+}

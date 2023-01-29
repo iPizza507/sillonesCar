@@ -54,7 +54,7 @@ export const Home = () => {
             <Link to="/product">Ver productos</Link>
           </div>
 
-          <div>
+          <div className="home-text-image-fond">
             <img
               src={sillonHome6}
               alt=""
