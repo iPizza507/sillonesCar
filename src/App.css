@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+}
+
+.opacity{
+  opacity: 0;
+}
+@keyframes slideinLEFT{
+    from {
+      margin-left: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+}
+@keyframes opaci {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 100%;
+    }
+}

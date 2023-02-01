@@ -1,0 +1,190 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   .home-header{
+        width: 100%;
+        height: auto;
+        figure{
+            position: relative;
+            .sillonFondo{
+                width: 100%; 
+                object-fit: cover;
+            }
+            .text-img{
+                background-color: white;
+                opacity: 0.7;
+                width: 100%;
+                padding: 2rem 0;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -45%);
+                text-align: center;
+                
+                h1{
+                    font-size: 3rem;
+                    margin: 0;
+                    width: 100%;
+                    animation-duration: 3s;
+                    animation-name: slideinLEFT;
+                }
+                h2{
+                    font-size: 2rem;
+                    margin: 0;
+                    width: 100%;
+                    animation-duration: 3s;
+                    animation-name: slideinLEFT;
+                }
+            }  
+        }
+    }
+    .home-text{
+        text-align: center;
+        margin: 1rem 0;
+        h4,h3, p{
+            margin: 0.7rem;
+        }
+       
+        hr{
+            width: 15%;
+            margin: 1rem auto;
+            border-top: 4px double #000;
+        }
+    }
+    .home-text-image{
+        background-color: rgb(250, 243, 235);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem;
+        justify-content: center;
+        
+        .home-text2{
+            width: 50%;
+            margin: 1rem;
+            text-align: center;
+            h1{
+            font-size: 2rem; 
+            margin: 0.7rem;
+            }
+            h2{
+                font-size: 1rem;
+                margin: 0.7rem;
+            }
+            a{
+                font-size: 1rem;
+                text-decoration: none;
+                background-color: rgb(250, 233, 215);
+                border-radius: 5px;
+                border: solid 1px black;
+                margin: 0.5rem;
+                padding: 0.3rem;
+                color: black;
+                transition: all 400ms;
+            }
+            a:hover{
+                background-color: rgb(255, 226, 196);
+            }
+        }
+        .home-text-image-fond{
+            background-color: white;
+            padding: 25px;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 400px;
+            }
+        }
+    }
+    .home-images{
+        margin: 2rem;
+        display: grid;
+        grid-template-areas: "image2 image2"
+                            "image3 image5"
+                            "image4 image1";
+        gap: 2rem;
+        img{
+            width: 100%;
+            height: 600px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #image1{
+            grid-area: image1;
+        }
+        #image2{
+            grid-area: image2;
+        }
+        #image3{
+            grid-area: image3;
+        }
+        #image4{
+            grid-area: image4;
+        }
+        #image5{
+            grid-area: image5;
+        }
+    }
+}
+ 
+@media all and (max-width:1024px){ 
+    .home{
+       .home-header{
+            .sillonFondo{
+                height: 700px;
+            }
+        }
+        .home-text-image{
+            padding: 2rem 10%;
+           
+        }
+        .home-images{
+            margin: 2rem 10%;
+            img{
+                width: 100%;
+                height: 350px;
+            }
+        }
+    }
+
+}
+
+@media all and (max-width:768px){ 
+    .home{
+       .home-header{
+            .sillonFondo{
+                height: 600px;
+            }
+        }
+        .home-text-image{
+            flex-direction: column;
+            padding: 2rem;
+            .home-text2{
+                width: 80%;
+            }
+            .home-text-image-fond{
+                background-color: white;
+                padding: 15px;
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 300px;
+                }
+            }
+        }
+        .home-images{
+            margin: 2rem 10%;
+            grid-template-areas: "image2"
+                                "image1"
+                                "image3"
+                                "image5"
+                                "image4";
+            img{
+                width: 100%;
+                height: 350px;
+            }
+        }
+    }
+
+}
